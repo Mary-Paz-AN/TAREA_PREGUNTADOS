@@ -1,0 +1,93 @@
+[
+    {
+      "id": 1,
+      "pregunta": "¿Cuántas teclas tiene un piano?",
+      "respuestas": [
+        {"texto": "88", "correcta": true},
+        {"texto": "93", "correcta": false},
+        {"texto": "76", "correcta": false}
+      ]
+    },
+    {
+      "id": 2,
+      "pregunta": "¿Cuál es cuarto digito de pi?",
+      "respuestas": [
+        {"texto": "1", "correcta": true},
+        {"texto": "5", "correcta": false},
+        {"texto": "9", "correcta": false}
+      ]
+    },
+    {
+      "id": 3,
+      "pregunta": "¿Cuál es el río más largo del mundo?",
+      "respuestas": [
+        {"texto": "Nilo", "correcta": true},
+        {"texto": "Amazonas", "correcta": false},
+        {"texto": "Yangtsé", "correcta": false}
+      ]
+    },
+    {
+      "id": 4,
+      "pregunta": "¿Qué deportes son incluidos en el triatlón?",
+      "respuestas": [
+        {"texto": "Atletismo, Natación y Ciclismo", "correcta": true},
+        {"texto": "Atletismo, Relevos y Salto en bayas", "correcta": false},
+        {"texto": "Salto en bayas, Ciclismo y Atetlismo", "correcta": false}
+      ]
+    },
+    {
+      "id": 5,
+      "pregunta": "¿Qué cuidad fue host de la olimpia 2020?",
+      "respuestas": [
+        {"texto": "Tokyo", "correcta": true},
+        {"texto": "Seoul", "correcta": false},
+        {"texto": "Bejín", "correcta": false}
+      ]
+    },
+    {
+      "id": 6,
+      "pregunta": "¿En qué continente se encuentra Egipto?",
+      "respuestas": [
+        {"texto": "África", "correcta": true},
+        {"texto": "Asia", "correcta": false},
+        {"texto": "Europa", "correcta": false}
+      ]
+    },
+    {
+      "id": 7,
+      "pregunta": "¿Cuál es la capital de Canada?",
+      "respuestas": [
+        {"texto": "Otawa", "correcta": true},
+        {"texto": "Calgary", "correcta": false},
+        {"texto": "Toronto", "correcta": false}
+      ]
+    },
+    {
+      "id": 8,
+      "pregunta": "¿Qué país es conocido por la Torre Eiffel?",
+      "respuestas": [
+        {"texto": "Francia", "correcta": true},
+        {"texto": "Italia", "correcta": false},
+        {"texto": "España", "correcta": false}
+      ]
+    },
+    {
+      "id": 9,
+      "pregunta": "¿Quién escribió el libro denominado Cocori?",
+      "respuestas": [
+        {"texto": "Joaquín Gutiérrez", "correcta": true},
+        {"texto": "Carmen Lyra", "correcta": false},
+        {"texto": "Lara Ríos", "correcta": false}
+      ]
+    },
+    {
+      "id": 10,
+      "pregunta": "¿Quién pintó la Mona Lisa?",
+      "respuestas": [
+        {"texto": "Leonardo da Vinci", "correcta": true},
+        {"texto": "Vincent van Gogh", "correcta": false},
+        {"texto": "Pablo Picasso", "correcta": false}
+      ]
+    }
+  ]
+  

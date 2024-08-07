@@ -1,0 +1,31 @@
+[
+    {
+      "id": 1,
+      "name": "Mary Paz",
+      "won": 10,
+      "lose": 0,
+      "state": 1
+    },
+    {
+      "id": 2,
+      "name": "Jose",
+      "won": 6,
+      "lose": 4,
+      "state": 1
+    },
+    {
+      "id": 3,
+      "name": "Cristina",
+      "won": 8,
+      "lose": 2,
+      "state": 1
+    },
+    {
+      "id": 4,
+      "name": "Alejandro",
+      "won": 5,
+      "lose": 5,
+      "state": 0
+    }
+  ]
+  

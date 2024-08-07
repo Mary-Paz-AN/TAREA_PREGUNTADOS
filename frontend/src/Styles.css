@@ -1,0 +1,108 @@
+body {
+    background-color: #171d5b;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#centerBox {
+    width: auto;
+    height: auto; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#box {
+    width: auto;
+    height: auto; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.title {
+    color: #95d4fb;
+    text-align: center;
+    font-family: "Alkatra", system-ui;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 40px;
+    margin-top: 20px; 
+    margin-bottom: 10px;
+}
+
+.titleMedium {
+    color: #1764c8;
+    background-color: #effbfe;
+    font-family: "Alkatra", system-ui;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 30px;
+    margin-top: 15px; 
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.text {
+    color: #effbfe; /*effbfe*/
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    margin-top: 0; 
+    margin-bottom: 20px;
+}
+
+.inpt {
+    height: 30px;
+    width: 300px;
+    background-color: #effbfe;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#171d5b;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 5px;
+}
+
+.btn {
+    height: 60px;
+    width: 160px;
+    background-color: #1764c8;
+    border-radius: 5px;
+    border: none;
+    color: #effbfe;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Alkatra", system-ui;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
