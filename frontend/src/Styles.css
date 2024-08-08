@@ -19,13 +19,18 @@ body {
 }
 
 #box {
-    width: auto;
-    height: auto; 
+    width: 400px;
+    height: 600px; 
+    background-color: #effbfe;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    border-radius: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#box:hover {
+    overflow: auto;
 }
 
 .title {
@@ -55,6 +60,31 @@ body {
     margin-top: 15px; 
     margin-bottom: 10px;
     display: flex;
+}
+
+.subTitle {
+    color: #171d5b;
+    font-family: "Alkatra", system-ui;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 30px;
+    margin-top: 5px; 
+    margin-bottom: 10px;
+    margin-left: 130px;
+}
+
+.subTitleMedium {
+    font-family: "Alkatra", system-ui;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 25px;
+    margin-top: 5px; 
+    margin-bottom: 10px;
+    margin-left: 50px;
 }
 
 .text {

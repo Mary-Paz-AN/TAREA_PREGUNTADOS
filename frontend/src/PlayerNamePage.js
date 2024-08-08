@@ -14,7 +14,7 @@ function PlayerNamePage() {
     return (
         <div>
             <div id="centerBox">
-                <h1 className="title">Ingrese su name</h1>
+                <h1 className="title">Ingrese su nombre</h1>
                 <input className="inpt"></input>
                 <button onClick={game} className="btn">Aceptar</button>
             </div>

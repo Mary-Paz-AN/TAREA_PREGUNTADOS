@@ -12,18 +12,18 @@ function HistoryPage() {
   return (
     <div>
       <div id="centerBox">
-        <h1 className="title">Historial</h1>
-        <ul>
-          {games.map((game, index) => (
-            <div key={index}> 
-              <p>Partida {game.id}</p>
-              <p>Jugador: {game.name}</p>
-              <p>Preguntas Acertadas: {game.win}</p>
-              <p>Preguntas Perdidas: {game.lose}</p>
-              <p>¿Ganó?: {game.state}</p>
+        <div><h2 className="title">Historial</h2></div>
+        <div id="box">
+          {games.map((game) => (
+            <div key={game.id}>
+              <h1 className="subTitle">Partida {game.id}</h1>
+              <p class="subTitleMedium"><span style={{color: "#1764c8"}}>Jugador:</span> {game.name}</p>
+              <p class="subTitleMedium"><span style={{color: "#1764c8"}}>Preguntas Aceptadas:</span> {game.won}</p>
+              <p class="subTitleMedium"><span style={{color: "#1764c8"}}>Preguntas Falladas:</span> {game.lose}</p>
+              <p class="subTitleMedium"><span style={{color: "#1764c8"}}>¿Ganó? </span> {game.state ? 'Si' : 'No'}</p>
             </div>
           ))}
-        </ul>
+        </div>
       </div>
     </div>
   );

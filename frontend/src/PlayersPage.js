@@ -19,8 +19,8 @@ function PlayersPage() {
       <div id="centerBox">
         <ul>
           <h1 className="title">Haga click en el nombre que desea para jugar:</h1>
-          {players.map((player, index) => (
-            <Link to="/game" key={index} onClick={game} className="titleMedium">{player.name}</Link>
+          {players.map((player) => (
+            <Link to="/game" key={player.id} onClick={game} className="titleMedium">{player.name}</Link>
           ))}
         </ul>
       </div>
