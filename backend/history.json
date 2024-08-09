@@ -1,31 +1,51 @@
 [
-    {
-      "id": 1,
-      "name": "Mary Paz",
-      "won": 10,
-      "lose": 0,
-      "state": true
-    },
-    {
-      "id": 2,
-      "name": "Jose",
-      "won": 6,
-      "lose": 4,
-      "state": true
-    },
-    {
-      "id": 3,
-      "name": "Cristina",
-      "won": 8,
-      "lose": 2,
-      "state": true
-    },
-    {
-      "id": 4,
-      "name": "Alejandro",
-      "won": 5,
-      "lose": 5,
-      "state": false
-    }
-  ]
-  
+  {
+    "id": 1,
+    "name": "Mary Paz",
+    "won": 10,
+    "lose": 0,
+    "state": true
+  },
+  {
+    "id": 2,
+    "name": "Jose",
+    "won": 6,
+    "lose": 4,
+    "state": true
+  },
+  {
+    "id": 3,
+    "name": "Cristina",
+    "won": 8,
+    "lose": 2,
+    "state": true
+  },
+  {
+    "id": 4,
+    "name": "Alejandro",
+    "won": 5,
+    "lose": 5,
+    "state": false
+  },
+  {
+    "id": 5,
+    "name": "Kris",
+    "won": 0,
+    "lose": 0,
+    "state": false
+  },
+  {
+    "id": 6,
+    "name": "Katherine",
+    "won": 0,
+    "lose": 0,
+    "state": false
+  },
+  {
+    "id": 7,
+    "name": "DAS",
+    "won": 0,
+    "lose": 0,
+    "state": false
+  }
+]
