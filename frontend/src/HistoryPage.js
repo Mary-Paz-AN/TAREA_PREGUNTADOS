@@ -1,8 +1,16 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from 'react-router-dom';
 
 function HistoryPage() {
   const [games, setGames] = useState([]);
+  const navigate = useNavigate();
 
+  //Returns to the initial page
+  const back = () => {
+    navigate('/');
+  };
+
+  //Gets the info in the json file for the history
   useEffect(() => {
     fetch("/api/history")
       .then((res) => res.json())
@@ -24,6 +32,7 @@ function HistoryPage() {
             </div>
           ))}
         </div>
+        <button onClick={back} className="btn">Volver</button>
       </div>
     </div>
   );

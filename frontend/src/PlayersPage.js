@@ -17,12 +17,13 @@ function PlayersPage() {
   return (
     <div>
       <div id="centerBox">
-        <ul>
-          <h1 className="title">Haga click en el nombre que desea para jugar:</h1>
+        <h1 className="title">Haga click en el nombre que desea para jugar:</h1>
+        <div id="box" style={{backgroundColor: "#171d5b"}}>
           {players.map((player) => (
             <Link to="/game" key={player.id} onClick={game} className="titleMedium">{player.name}</Link>
           ))}
-        </ul>
+        </div>
+        <Link to="/" className="btn">Volver</Link>
       </div>
     </div>
   );

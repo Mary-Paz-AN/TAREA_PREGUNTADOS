@@ -50,6 +50,11 @@ function PlayerNamePage() {
             navigate('/game');
         }
     };
+
+    //Returns to the initial page
+    const back = () => {
+        navigate('/');
+    };
     
     
     return (
@@ -58,6 +63,7 @@ function PlayerNamePage() {
                 <h1 className="title">Ingrese su nombre</h1>
                 <input type='text' value={name} onChange={(e) => setName(e.target.value)} className="inpt"></input>
                 <button onClick={game} className="btn">Aceptar</button>
+                <button onClick={back} className="btn">Volver</button>
                 <ErrorHandler
                     message="El nombre debe tener mínimo 3 carácteres alfabéticos."
                     show={error}
