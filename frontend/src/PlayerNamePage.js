@@ -31,23 +31,29 @@ function PlayerNamePage() {
             },
             body: JSON.stringify({ name: name }),
         })
-            .then(response => response.text())
-            .then(data => {
-                alert(data);
-            })
-                .catch(err => {
-                    alert('Error al guardar los datos.');
-                    console.error(err);
+        .then((res) => {
+            if(!res.ok) {
+                return res.json.then((error) => {
+                    throw new Error(error.error);
                 });
+            }
+            return res.json();
+        })
+        .then((data) => {
+            setName('');
+            navigate('/game', { state: { id: data.id } });
+        })
+        .catch((err) => {
+            alert('Error al guardar los datos.', err.message);
+            console.error(err.message);
+        });
     };
 
-    //
+    //Auxiliar function for more order
     const game = (e) => {
         let validation = inputValidation();
         if(validation) {
             saveName(e);
-            setName('');
-            navigate('/game');
         }
     };
 

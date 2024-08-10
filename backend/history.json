@@ -26,19 +26,5 @@
     "won": 5,
     "lose": 5,
     "state": false
-  },
-  {
-    "id": 5,
-    "name": "Kris",
-    "won": 0,
-    "lose": 0,
-    "state": false
-  },
-  {
-    "id": 6,
-    "name": "Katherine",
-    "won": 0,
-    "lose": 0,
-    "state": false
   }
 ]

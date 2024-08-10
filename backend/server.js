@@ -33,16 +33,15 @@ app.get('/api/questions', (req, res) => {
 
 //Save the player name
 app.post('/api/playerName', (req, res) => {
-    console.log(req.body);
     const {name} = req.body;
-    fS.readFile('history.json', 'utf-8', (error, data) => {
-        if(error) {
-            return resizeBy.status(500).send('Error al leer el archivo');
+    fS.readFile('history.json', 'utf-8', (err, info) => {
+        if(err) {
+            return res.status(500).json({ error: 'Error al leer el archivo' });
         }
     
         let dataJson = [];
-        if(data) {
-            dataJson = JSON.parse(data);
+        if(info) {
+            dataJson = JSON.parse(info);
         }
 
         const idPlayer = (dataJson.reduce((max, item) => (item.id > max ? item.id : max), 0) + 1);
@@ -51,10 +50,10 @@ app.post('/api/playerName', (req, res) => {
     
         fS.writeFile('history.json', JSON.stringify(dataJson, null, 2), (err) => {
             if(err) {
-                return res.status(500).send('Error al guardar el archivo.');
+                return res.status(500).json({ error: 'Error al guardar el archivo.' });
             }
     
-            res.status(200).send('Datos guardados exitosamente.');
+            res.status(200).json({ id: idPlayer });
         });
     });
 });

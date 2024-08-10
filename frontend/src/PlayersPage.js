@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function PlayersPage() {
   const [players, setPlayers] = useState([]);
+  const navigate = useNavigate();
   
   useEffect(() => {
     fetch("/api/players")
@@ -10,8 +12,8 @@ function PlayersPage() {
       .then((data) => setPlayers(data));
   }, []);
 
-  const game = () => {
-    console.log("Todo bien");
+  const game = (id) => {
+    navigate('/game', { state: { id: id } });
   };
 
   return (
@@ -20,7 +22,7 @@ function PlayersPage() {
         <h1 className="title">Haga click en el nombre que desea para jugar:</h1>
         <div id="box" style={{backgroundColor: "#171d5b"}}>
           {players.map((player) => (
-            <Link to="/game" key={player.id} onClick={game} className="titleMedium">{player.name}</Link>
+            <button key={player.id} onClick={() => game(player.id)} className="titleMedium">{player.name}</button>
           ))}
         </div>
         <Link to="/" className="btn">Volver</Link>
@@ -28,5 +30,7 @@ function PlayersPage() {
     </div>
   );
 }
+
+/*Tengo pensadocmbiar el link para ver si asi logro pasarle el id a la otra pagina */
 
 export default PlayersPage;
