@@ -91,7 +91,7 @@
     },
     {
       "id": 11,
-      "question": "¿Cuál es mental má abundante en la corteza terrestre?",
+      "question": "¿Cuál es mental más abundante en la corteza terrestre?",
       "answers": [
         {"num": 1, "answer": "Aluminio", "correct": true},
         {"num": 2, "answer": "Hierro", "correct": false},
@@ -102,7 +102,7 @@
       "id": 12,
       "question": "¿Cuál es el nombre completo del comopositor conocido como Beethoven?",
       "answers": [
-        {"num": 1, "answer": "Ludwing vab Beethoven", "correct": true},
+        {"num": 1, "answer": "Ludwing van Beethoven", "correct": true},
         {"num": 2, "answer": "Johann Sebastian Beethoven", "correct": false},
         {"num": 3, "answer": "Wolfgang Amadeus Beethoven", "correct": false}
       ]
@@ -129,7 +129,7 @@
       "id": 15,
       "question": "¿Qué son las 'Cookies'?",
       "answers": [
-        {"num": 1, "answer": "Pequeños archivos de answer para recordar información del usuario.", "correct": true},
+        {"num": 1, "answer": "Pequeños archivos de texto para recordar información del usuario.", "correct": true},
         {"num": 2, "answer": "Una marca de galletas", "correct": false},
         {"num": 3, "answer": "Memoria de almacenamiento rápida que guarda datos y resultados recientes.", "correct": false}
       ]

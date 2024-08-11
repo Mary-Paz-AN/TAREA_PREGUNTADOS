@@ -19,12 +19,12 @@ function chooseQuestions(res) {
         let jsonQuestions = JSON.parse(info);
         let questions = [];
     
-        for(let i = 0; i < 10; i++) {
-            const selectedQuestion = Math.floor(Math.random() * jsonQuestions.length);
+        while (questions.length < 10 && jsonQuestions.length > 0) {
+            const selectedIndex = Math.floor(Math.random() * jsonQuestions.length);
+            const selectedQuestion = jsonQuestions.splice(selectedIndex, 1)[0]; 
 
-            questions-push(jsonQuestions[selectedQuestion]);
-            jsonQuestions.slice(selectedQuestion, 1);
-        };
+            questions.push(selectedQuestion);
+        }
 
         res.status(200).json(questions);
 
@@ -40,15 +40,15 @@ function chooseAnswers(questionId, res) {
     
         let jsonQuestions = JSON.parse(info);
         let question = jsonQuestions.find(q => q.id === questionId);
-        let jsonAnswers = question.nswers;
+        let jsonAnswers = question.answers;
         let answers = [];
-    
-        for(let i = 0; i < 3; i++) {
-            const selectedAnswer = Math.floor(Math.random() * jsonAnswers.length);
+        
+        while (answers.length < 3 && jsonAnswers.length > 0) {
+            const selectedIndex = Math.floor(Math.random() * jsonAnswers.length);
+            const selectedAnswer = jsonAnswers.splice(selectedIndex, 1)[0]; 
 
-            answers-push(jsonAnswers[selectedAnswer]);
-            jsonAnswers.slice(selectedAnswer, 1);
-        };
+            answers.push(selectedAnswer);
+        }
 
         res.status(200).json(answers);
 
@@ -63,8 +63,8 @@ function validateAnswer(answers, answerId, res) {
         state = true;
     }
 
-    let correctAnswer = (answers.find(a => a.correct === true)).text;
-    res.status(200).json({ coorect: state, text: correctAnswer });
+    let correctAnswer = (answers.find(a => a.correct === true)).answer;
+    res.status(200).json({ correct: state, text: correctAnswer });
 }
 
 //Validates if the player win
@@ -96,7 +96,7 @@ function saveGame(name, won, lose, state, res) {
                 return res.status(500).json({ error: 'Error al guardar el archivo.' });
             }
     
-            res.status(200).json({ id: idPlayer });
+            res.status(200).json({ fin: "Todo salio bien." });
         });
     });
 }

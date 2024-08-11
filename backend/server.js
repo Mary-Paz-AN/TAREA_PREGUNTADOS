@@ -29,7 +29,6 @@ app.get('/api/history', (req, res) => {
 
 //Get the questions from the json file
 app.get('/api/questions', (req, res) => {
-    const {id} = req.body;
     chooseQuestions(res);
 }); 
 
