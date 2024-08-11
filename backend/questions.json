@@ -1,92 +1,137 @@
 [
     {
       "id": 1,
-      "pregunta": "¿Cuántas teclas tiene un piano?",
-      "respuestas": [
-        {"texto": "88", "correcta": true},
-        {"texto": "93", "correcta": false},
-        {"texto": "76", "correcta": false}
+      "question": "¿Cuántas teclas tiene un piano?",
+      "answers": [
+        {"num": 1, "answer": "88", "correct": true},
+        {"num": 2, "answer": "93", "correct": false},
+        {"num": 3, "answer": "76", "correct": false}
       ]
     },
     {
       "id": 2,
-      "pregunta": "¿Cuál es cuarto digito de pi?",
-      "respuestas": [
-        {"texto": "1", "correcta": true},
-        {"texto": "5", "correcta": false},
-        {"texto": "9", "correcta": false}
+      "question": "¿Cuál es cuarto digito de pi?",
+      "answers": [
+        {"num": 1, "answer": "1", "correct": true},
+        {"num": 2, "answer": "5", "correct": false},
+        {"num": 3, "answer": "9", "correct": false}
       ]
     },
     {
       "id": 3,
-      "pregunta": "¿Cuál es el río más largo del mundo?",
-      "respuestas": [
-        {"texto": "Nilo", "correcta": true},
-        {"texto": "Amazonas", "correcta": false},
-        {"texto": "Yangtsé", "correcta": false}
+      "question": "¿Cuál es el río más largo del mundo?",
+      "answers": [
+        {"num": 1, "answer": "Nilo", "correct": true},
+        {"num": 2, "answer": "Amazonas", "correct": false},
+        {"num": 3, "answer": "Yangtsé", "correct": false}
       ]
     },
     {
       "id": 4,
-      "pregunta": "¿Qué deportes son incluidos en el triatlón?",
-      "respuestas": [
-        {"texto": "Atletismo, Natación y Ciclismo", "correcta": true},
-        {"texto": "Atletismo, Relevos y Salto en bayas", "correcta": false},
-        {"texto": "Salto en bayas, Ciclismo y Atetlismo", "correcta": false}
+      "question": "¿Qué deportes son incluidos en el triatlón?",
+      "answers": [
+        {"num": 1, "answer": "Atletismo, Natación y Ciclismo", "correct": true},
+        {"num": 2, "answer": "Atletismo, Relevos y Salto en bayas", "correct": false},
+        {"num": 3, "answer": "Salto en bayas, Ciclismo y Atetlismo", "correct": false}
       ]
     },
     {
       "id": 5,
-      "pregunta": "¿Qué cuidad fue host de la olimpia 2020?",
-      "respuestas": [
-        {"texto": "Tokyo", "correcta": true},
-        {"texto": "Seoul", "correcta": false},
-        {"texto": "Bejín", "correcta": false}
+      "question": "¿Qué cuidad fue host de la olimpia 2020?",
+      "answers": [
+        {"num": 1, "answer": "Tokyo", "correct": true},
+        {"num": 2, "answer": "Seoul", "correct": false},
+        {"num": 3, "answer": "Bejín", "correct": false}
       ]
     },
     {
       "id": 6,
-      "pregunta": "¿En qué continente se encuentra Egipto?",
-      "respuestas": [
-        {"texto": "África", "correcta": true},
-        {"texto": "Asia", "correcta": false},
-        {"texto": "Europa", "correcta": false}
+      "question": "¿En qué continente se encuentra Egipto?",
+      "answers": [
+        {"num": 1, "answer": "África", "correct": true},
+        {"num": 2, "answer": "Asia", "correct": false},
+        {"num": 3, "answer": "Europa", "correct": false}
       ]
     },
     {
       "id": 7,
-      "pregunta": "¿Cuál es la capital de Canada?",
-      "respuestas": [
-        {"texto": "Otawa", "correcta": true},
-        {"texto": "Calgary", "correcta": false},
-        {"texto": "Toronto", "correcta": false}
+      "question": "¿Cuál es la capital de Canada?",
+      "answers": [
+        {"num": 1, "answer": "Otawa", "correct": true},
+        {"num": 2, "answer": "Calgary", "correct": false},
+        {"num": 3, "answer": "Toronto", "correct": false}
       ]
     },
     {
       "id": 8,
-      "pregunta": "¿Qué país es conocido por la Torre Eiffel?",
-      "respuestas": [
-        {"texto": "Francia", "correcta": true},
-        {"texto": "Italia", "correcta": false},
-        {"texto": "España", "correcta": false}
+      "question": "¿Qué país es conocido por la Torre Eiffel?",
+      "answers": [
+        {"num": 1, "answer": "Francia", "correct": true},
+        {"num": 2, "answer": "Italia", "correct": false},
+        {"num": 3, "answer": "España", "correct": false}
       ]
     },
     {
       "id": 9,
-      "pregunta": "¿Quién escribió el libro denominado Cocori?",
-      "respuestas": [
-        {"texto": "Joaquín Gutiérrez", "correcta": true},
-        {"texto": "Carmen Lyra", "correcta": false},
-        {"texto": "Lara Ríos", "correcta": false}
+      "question": "¿Quién escribió el libro denominado Cocori?",
+      "answers": [
+        {"num": 1, "answer": "Joaquín Gutiérrez", "correct": true},
+        {"num": 2, "answer": "Carmen Lyra", "correct": false},
+        {"num": 3, "answer": "Lara Ríos", "correct": false}
       ]
     },
     {
       "id": 10,
-      "pregunta": "¿Quién pintó la Mona Lisa?",
-      "respuestas": [
-        {"texto": "Leonardo da Vinci", "correcta": true},
-        {"texto": "Vincent van Gogh", "correcta": false},
-        {"texto": "Pablo Picasso", "correcta": false}
+      "question": "¿Quién pintó la Mona Lisa?",
+      "answers": [
+        {"num": 1, "answer": "Leonardo da Vinci", "correct": true},
+        {"num": 2, "answer": "Vincent van Gogh", "correct": false},
+        {"num": 3, "answer": "Pablo Picasso", "correct": false}
+      ]
+    },
+    {
+      "id": 11,
+      "question": "¿Cuál es mental má abundante en la corteza terrestre?",
+      "answers": [
+        {"num": 1, "answer": "Aluminio", "correct": true},
+        {"num": 2, "answer": "Hierro", "correct": false},
+        {"num": 3, "answer": "Cobre", "correct": false}
+      ]
+    },
+    {
+      "id": 12,
+      "question": "¿Cuál es el nombre completo del comopositor conocido como Beethoven?",
+      "answers": [
+        {"num": 1, "answer": "Ludwing vab Beethoven", "correct": true},
+        {"num": 2, "answer": "Johann Sebastian Beethoven", "correct": false},
+        {"num": 3, "answer": "Wolfgang Amadeus Beethoven", "correct": false}
+      ]
+    },
+    {
+      "id": 13,
+      "question": "¿Quién escribió la famosa canción 'Hello'?",
+      "answers": [
+        {"num": 1, "answer": "Adele", "correct": true},
+        {"num": 2, "answer": "Rihana", "correct": false},
+        {"num": 3, "answer": "Beyoncé", "correct": false}
+      ]
+    },
+    {
+      "id": 14,
+      "question": "¿Qué es una 'API'?",
+      "answers": [
+        {"num": 1, "answer": "Una interfaz que permite que diferentes programas se comuniquen entre sí", "correct": true},
+        {"num": 2, "answer": "Un lenguaje de programación", "correct": false},
+        {"num": 3, "answer": "Appearance Preference Interface", "correct": false}
+      ]
+    },
+    {
+      "id": 15,
+      "question": "¿Qué son las 'Cookies'?",
+      "answers": [
+        {"num": 1, "answer": "Pequeños archivos de answer para recordar información del usuario.", "correct": true},
+        {"num": 2, "answer": "Una marca de galletas", "correct": false},
+        {"num": 3, "answer": "Memoria de almacenamiento rápida que guarda datos y resultados recientes.", "correct": false}
       ]
     }
   ]

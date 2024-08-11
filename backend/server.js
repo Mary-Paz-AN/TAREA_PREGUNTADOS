@@ -1,6 +1,6 @@
 //Dependency for the proper functioning of the server
 const express = require("express");
-const fS = require('fs');
+const { verifyFileExistence, chooseQuestions, chooseAnswers, validateAnswer, win, saveGame } = require('./utils');
 
 //Constants
 const app = express();
@@ -12,50 +12,48 @@ app.use(express.static("build"));
 app.use( express.json());
 app.use(express.urlencoded({ extended: true}));
 
-//
+//Gets and Posts
 //Route to get the players name
 app.get('/api/players', (req, res) => {
+    verifyFileExistence('history.json');
     const playersData = require('./history.json');
     res.json(playersData);
 });
 
 //Get the history info
 app.get('/api/history', (req, res) => {
-    const playersData = require('./history.json');
-    res.json(playersData);
+    verifyFileExistence('history.json');
+    const historyData = require('./history.json');
+    res.json(historyData);
 });
 
-//Get the questions for the game
+//Get the questions from the json file
 app.get('/api/questions', (req, res) => {
-    const questionsData = require('./questions.json');
-    res.json(questionsData);
+    const {id} = req.body;
+    chooseQuestions(res);
+}); 
+
+//Gets the anwers in a random position
+app.post('/api/answers', (req, res) => {
+    const {id} = req.body;
+    chooseAnswers(id, res);
+}); 
+
+//Ask if the awers is correct or incorrect
+app.post('/api/validateAnswer', (req, res) => {
+    const {answers, id} = req.body;
+    validateAnswer(answers, id, res);
+}); 
+
+//Ask if the player win or lose
+app.post('/api/win', (req, res) => {
+    const {right} = req.body;
+    win(right, res);
 });
 
-//Save the player name
-app.post('/api/playerName', (req, res) => {
-    const {name} = req.body;
-    fS.readFile('history.json', 'utf-8', (err, info) => {
-        if(err) {
-            return res.status(500).json({ error: 'Error al leer el archivo' });
-        }
-    
-        let dataJson = [];
-        if(info) {
-            dataJson = JSON.parse(info);
-        }
-
-        const idPlayer = (dataJson.reduce((max, item) => (item.id > max ? item.id : max), 0) + 1);
-    
-        dataJson.push({id: idPlayer, name, won: 0, lose: 0, state: false});
-    
-        fS.writeFile('history.json', JSON.stringify(dataJson, null, 2), (err) => {
-            if(err) {
-                return res.status(500).json({ error: 'Error al guardar el archivo.' });
-            }
-    
-            res.status(200).json({ id: idPlayer });
-        });
-    });
+//Save the player info of the game
+app.post('/api/saveGame', (req, res) => {
+    const {name, won, lose, state} = req.body;
+    verifyFileExistence('history.json');
+    saveGame(name,  won, lose, state, res);
 });
-
-  

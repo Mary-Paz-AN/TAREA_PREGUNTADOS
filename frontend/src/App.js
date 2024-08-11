@@ -1,7 +1,7 @@
-import "./Styles.css";
 import { Link } from 'react-router-dom';
+import "./Styles.css";
 
-//This is the look of the main page. It´s like the game menu
+//The main page
 function App() {
   return (
     <div>
@@ -10,7 +10,7 @@ function App() {
         <p className="text">Elija la opción que desee.</p>
         <Link to="/playerName" className="btn">Iniciar Juego</Link>
         <Link to="/players" className="btn">Jugadores</Link>
-        <Link to="/history" className="btn">Historial</Link>
+        <Link to='/history' className="btn">Historial</Link>
       </div>
     </div>
   );

@@ -10,7 +10,7 @@ import GamePage from './GamePage';
 //Creaters the root container
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-// Renderizar la aplicación con el enrutador
+//Creates as path for the pages to navegate in them
 root.render(
   <React.StrictMode>
     <Router>
