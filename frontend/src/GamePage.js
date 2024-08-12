@@ -88,8 +88,8 @@ function GamePage() {
     if(state) {
       setTitle('¡FIN DEL JUEGO!');
       setMessage(`Felicidades, se ve que si sabe. 🎉
-    Obtuvo ${right} buenas y ${wrong} malas.
-    Para salir presione una respuesta o el botón Volver`);
+        Obtuvo ${right} buenas y ${wrong} malas.
+        Para salir presione una respuesta o el botón Volver`);
       setInfoBox(true);
     } else {
       setTitle('¡FIN DEL JUEGO!');
